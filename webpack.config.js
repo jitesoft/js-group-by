@@ -11,7 +11,7 @@ module.exports = {
   ],
   output: {
     libraryTarget: 'umd',
-    library: 'Event',
+    library: 'OrderBy',
     filename: 'index.js'
   },
   module: {
