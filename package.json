@@ -4,7 +4,8 @@
   "description": "Makes all entries of an array - which returns a given key from callback - ordered under its key in resulting object.",
   "main": "index.js",
   "scripts": {
-    "test": "semistandard /src && jest"
+    "test": "semistandard /src && jest",
+    "build": "cross-env NODE_ENV=production && webpack"
   },
   "repository": {
     "type": "git",
