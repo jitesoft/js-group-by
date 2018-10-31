@@ -1,0 +1,22 @@
+{
+  "name": "@jitesoft/order-by",
+  "version": "1.0.0",
+  "description": "Makes all entries of an array - which returns a given key from callback - ordered under its key in resulting object.",
+  "main": "index.js",
+  "scripts": {
+    "test": "semistandard && jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:jitesoft/open-source/javascript/order-by.git"
+  },
+  "keywords": [
+    "array",
+    "object",
+    "order",
+    "map",
+    "jitesoft"
+  ],
+  "author": "Johannes Tegnér <johannes@jitesoft.com>",
+  "license": "MIT"
+}
