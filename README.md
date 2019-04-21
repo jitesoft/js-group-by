@@ -1,12 +1,12 @@
-# Order By
+# Group By
 
-Simple method to order an array by a given key in the array. The method uses a callback function to choose the 
-value to order the items by and returns an object which have all the ordered values in an array under the given key name.
+Simple method to group an array by a given key in the array. The method uses a callback function to choose the 
+value to group the values by and returns an object which have all the ordered values in an array under the given key name.
 
 ## Example:
 
 ```js
-import orderBy from '@jitesoft/order-by';
+import groupBy from '@jitesoft/group-by';
 
 let array = [ { "id": "abc", "value": "abc" },
               { "id": "abc", "value": "def" },
@@ -15,7 +15,7 @@ let array = [ { "id": "abc", "value": "abc" },
               { "id": "def", "value": "def" },
               { "id": "ghi", "value": "abc" } ];
 
-let result = orderBy(array, (obj) => obj.id);
+let result = groupBy(array, (obj) => obj.id);
 
 // Output:
 let obj = {
@@ -32,5 +32,4 @@ let obj = {
          { "id": "ghi", "value": "abc" }
        ]
 };
-
 ```
