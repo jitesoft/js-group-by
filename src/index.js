@@ -2,8 +2,8 @@
  * Groups each item in the list by a defined callback return value.
  * Input is expected to be an array-like structure and return value will be a standard map/object.
  *
- * @param {Array<*>} list
- * @param {Function} callback
+ * @param {Array<*>} list     Array to group.
+ * @param {Function} callback Callback to execute on each object in the array to fetch key for grouping.
  * @return {Object}
  */
 const groupBy = (list, callback) => {
