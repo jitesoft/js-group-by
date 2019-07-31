@@ -1,5 +1,8 @@
 # Group By
 
+[![Known Vulnerabilities](https://dev.snyk.io/test/npm/@jitesoft/group-by/badge.svg)](https://dev.snyk.io/test/npm/@jitesoft/group-by)
+[![pipeline status](https://gitlab.com/jitesoft/open-source/javascript/order-by/badges/master/pipeline.svg)](https://gitlab.com/jitesoft/open-source/javascript/order-by/commits/master)
+
 Simple method to group an array by a given key in the array. The method uses a callback function to choose the 
 value to group the values by and returns an object which have all the ordered values in an array under the given key name.
 
