@@ -1,8 +1,8 @@
 # Group By
 
 [![Known Vulnerabilities](https://dev.snyk.io/test/npm/@jitesoft/group-by/badge.svg)](https://dev.snyk.io/test/npm/@jitesoft/group-by)
-[![pipeline status](https://gitlab.com/jitesoft/open-source/javascript/order-by/badges/master/pipeline.svg)](https://gitlab.com/jitesoft/open-source/javascript/order-by/commits/master)
-[![coverage report](https://gitlab.com/jitesoft/open-source/javascript/order-by/badges/master/coverage.svg)](https://gitlab.com/jitesoft/open-source/javascript/order-by/commits/master)
+[![pipeline status](https://gitlab.com/jitesoft/open-source/javascript/group-by/badges/master/pipeline.svg)](https://gitlab.com/jitesoft/open-source/javascript/group-by/commits/master)
+[![coverage report](https://gitlab.com/jitesoft/open-source/javascript/group-by/badges/master/coverage.svg)](https://gitlab.com/jitesoft/open-source/javascript/group-by-by/commits/master)
 [![npm](https://img.shields.io/npm/dt/@jitesoft/group-by)](https://www.npmjs.com/package/@jitesoft/group-by)
 [![Back project](https://img.shields.io/badge/Open%20Collective-Tip%20the%20devs!-blue.svg)](https://opencollective.com/jitesoft-open-source)
 
