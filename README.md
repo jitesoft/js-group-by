@@ -1,6 +1,6 @@
 # Group By
 
-![npm (scoped)](https://img.shields.io/npm/v/@jitesoft/group-by)
+[![npm (scoped)](https://img.shields.io/npm/v/@jitesoft/group-by)](https://www.npmjs.com/package/@jitesoft/group-by)
 [![Known Vulnerabilities](https://dev.snyk.io/test/npm/@jitesoft/group-by/badge.svg)](https://dev.snyk.io/test/npm/@jitesoft/group-by)
 [![pipeline status](https://gitlab.com/jitesoft/open-source/javascript/group-by/badges/master/pipeline.svg)](https://gitlab.com/jitesoft/open-source/javascript/group-by/commits/master)
 [![coverage report](https://gitlab.com/jitesoft/open-source/javascript/group-by/badges/master/coverage.svg)](https://gitlab.com/jitesoft/open-source/javascript/group-by-by/commits/master)
