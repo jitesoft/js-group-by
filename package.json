@@ -5,7 +5,7 @@
   "esnext": "src/index.js",
   "scripts": {
     "test": "eslint src/ && jest && npm audit",
-    "build": "cross-env NODE_ENV=production webpack"
+    "build:prod": "cross-env NODE_ENV=production webpack"
   },
   "repository": {
     "type": "git",
