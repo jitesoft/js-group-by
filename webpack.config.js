@@ -12,7 +12,7 @@ module.exports = {
     libraryTarget: 'umd',
     library: 'OrderBy',
     filename: 'index.js',
-    globalObject: "typeof self !== 'undefined' ? self : this"
+    globalObject: 'this'
   },
   module: {
     rules: [
