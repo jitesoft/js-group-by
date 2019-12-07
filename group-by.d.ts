@@ -6,4 +6,4 @@
  * @param callback Callback to execute on each object in the array to fetch key for grouping.
  * @return Object in which keys are selected from passed list and the items are the items which are grouped under the key.
  */
-export default function groupBy(list: any[], callback: (object) => void): object;
+export default function groupBy(list: any[], callback: (any) => void): object;
