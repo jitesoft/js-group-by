@@ -1,0 +1,46 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - '@babel/core > lodash':
+        patched: '2020-05-08T01:20:40.639Z'
+    - eslint > lodash:
+        patched: '2020-05-08T01:20:40.639Z'
+    - '@babel/core > @babel/helper-module-transforms > lodash':
+        patched: '2020-05-08T01:20:40.639Z'
+    - eslint > inquirer > lodash:
+        patched: '2020-05-08T01:20:40.639Z'
+    - eslint > table > lodash:
+        patched: '2020-05-08T01:20:40.639Z'
+    - webpack-cli > webpack-merge > lodash:
+        patched: '2020-05-08T01:20:40.639Z'
+    - '@jitesoft/babel-preset-main > @babel/preset-env > @babel/plugin-transform-block-scoping > lodash':
+        patched: '2020-05-08T01:20:40.639Z'
+    - babel-jest > @jest/transform > @babel/core > lodash:
+        patched: '2020-05-08T01:20:40.639Z'
+    - babel-jest > @jest/transform > @babel/core > @babel/helper-module-transforms > lodash:
+        patched: '2020-05-08T01:20:40.639Z'
+    - '@jitesoft/babel-preset-main > @babel/preset-env > @babel/plugin-transform-classes > @babel/helper-define-map > lodash':
+        patched: '2020-05-08T01:20:40.639Z'
+    - '@jitesoft/eslint-config > eslint-plugin-jest > @typescript-eslint/experimental-utils > @typescript-eslint/typescript-estree > lodash':
+        patched: '2020-05-08T01:20:40.639Z'
+    - babel-jest > @jest/transform > @babel/core > @babel/generator > @babel/types > lodash:
+        patched: '2020-05-08T01:20:40.639Z'
+    - '@jitesoft/babel-preset-main > @babel/preset-env > @babel/plugin-proposal-unicode-property-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash':
+        patched: '2020-05-08T01:20:40.639Z'
+    - '@jitesoft/babel-preset-main > @babel/plugin-proposal-class-properties > @babel/helper-create-class-features-plugin > @babel/helper-replace-supers > @babel/traverse > @babel/generator > lodash':
+        patched: '2020-05-08T01:20:40.639Z'
+    - babel-jest > @jest/transform > @babel/core > @babel/helper-module-transforms > @babel/helper-replace-supers > @babel/traverse > lodash:
+        patched: '2020-05-08T01:20:40.639Z'
+    - jest > @jest/core > @jest/reporters > @jest/environment > @jest/fake-timers > jest-message-util > @jest/test-result > @jest/transform > @babel/core > lodash:
+        patched: '2020-05-08T01:20:40.639Z'
+    - jest > @jest/core > @jest/reporters > jest-runtime > jest-config > jest-environment-jsdom > jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2020-05-08T01:20:40.639Z'
+    - jest > @jest/core > @jest/reporters > @jest/environment > @jest/fake-timers > jest-message-util > @jest/test-result > @jest/transform > @babel/core > @babel/helper-module-transforms > lodash:
+        patched: '2020-05-08T01:20:40.639Z'
+    - jest > @jest/core > @jest/reporters > @jest/environment > @jest/fake-timers > jest-message-util > @jest/test-result > @jest/transform > @babel/core > @babel/generator > @babel/types > lodash:
+        patched: '2020-05-08T01:20:40.639Z'
+    - jest > @jest/core > @jest/reporters > @jest/environment > @jest/fake-timers > jest-message-util > @jest/test-result > @jest/transform > @babel/core > @babel/helper-module-transforms > @babel/helper-replace-supers > @babel/traverse > lodash:
+        patched: '2020-05-08T01:20:40.639Z'
