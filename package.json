@@ -5,7 +5,9 @@
   "esnext": "src/index.js",
   "scripts": {
     "test": "eslint src/ && jest && npm audit",
-    "build:prod": "cross-env NODE_ENV=production webpack"
+    "build:prod": "cross-env NODE_ENV=production webpack",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "types": "group-by.d.ts",
   "repository": {
@@ -37,7 +39,9 @@
     ]
   },
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "snyk": "^1.330.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@jitesoft/babel-preset-main": "^2.2.3",
@@ -51,5 +55,6 @@
     "jest": "^26.0.1",
     "webpack": "^5.0.0-beta.16",
     "webpack-cli": "^4.0.0-beta.8"
-  }
+  },
+  "snyk": true
 }
