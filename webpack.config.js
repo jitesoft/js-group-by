@@ -5,12 +5,10 @@ module.exports = {
   entry: [
     Path.join(__dirname, 'src', 'index.js')
   ],
-  optimization: {
-    minimize: true
-  },
+  devtool: false,
   output: {
     libraryTarget: 'umd',
-    library: 'OrderBy',
+    library: '@jitesoft/group-by',
     filename: 'index.js',
     globalObject: 'this'
   },
