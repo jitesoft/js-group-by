@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "esnext": "src/index.js",
   "scripts": {
-    "test": "eslint src/ && jest && npm audit",
+    "test": "eslint src/ && jest",
     "build:prod": "cross-env NODE_ENV=production webpack"
   },
   "types": "group-by.d.ts",
@@ -39,17 +39,17 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.10.3",
-    "@jitesoft/babel-preset-main": "^2.3.2",
-    "@jitesoft/eslint-config": "^2.2.0",
+    "@babel/core": "^7.10.4",
+    "@jitesoft/babel-preset-main": "^2.4.0",
+    "@jitesoft/eslint-config": "^2.3.0",
     "babel-eslint": "^10.1.0",
-    "babel-jest": "^26.0.1",
+    "babel-jest": "^26.1.0",
     "babel-loader": "^8.1.0",
     "core-js": "^3.6.5",
     "cross-env": "^7.0.2",
-    "eslint": "^7.3.0",
-    "jest": "^26.0.1",
-    "webpack": "^5.0.0-beta.18",
+    "eslint": "^7.4.0",
+    "jest": "^26.1.0",
+    "webpack": "^5.0.0-beta.22",
     "webpack-cli": "^4.0.0-beta.8"
   }
 }
