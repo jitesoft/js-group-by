@@ -3,6 +3,7 @@
   "description": "Makes all entries of an array - which returns a given key from callback - grouped under its key in resulting object.",
   "main": "dist/index.js",
   "esnext": "src/index.js",
+  "module": "dist/index.mjs",
   "scripts": {
     "test": "eslint src/ && jest",
     "build:prod": "cross-env NODE_ENV=production webpack && babel src/index.js -o dist/index.mjs --compact true"
