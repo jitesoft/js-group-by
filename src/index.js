@@ -34,12 +34,12 @@ const groupBy = (list, keySelector) => {
  */
 const groupByAsync = async (list, keySelector) => {
   const result = {};
-  const count = list.length;
   let val = null;
+  const resolved = await Promise.all(list.map((x) => Promise.resolve(x).then(keySelector)));
+  const count = resolved.length;
 
   for (let i = 0; i < count; i++) {
-    val = await keySelector(list[i]);
-
+    val = resolved[i];
     if (result[val] === undefined) {
       result[val] = [];
     }
