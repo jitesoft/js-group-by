@@ -43,17 +43,17 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.15.7",
-    "@babel/core": "^7.15.5",
-    "@babel/eslint-parser": "^7.15.7",
-    "@jitesoft/babel-preset-main": "^2.13.1",
-    "@jitesoft/eslint-config": "^2.18.0",
-    "babel-jest": "^27.2.1",
+    "@babel/core": "^7.15.8",
+    "@babel/eslint-parser": "^7.15.8",
+    "@jitesoft/babel-preset-main": "^2.13.2",
+    "@jitesoft/eslint-config": "^2.18.2",
+    "babel-jest": "^27.3.1",
     "babel-loader": "^8.2.2",
-    "core-js": "^3.18.0",
+    "core-js": "^3.18.3",
     "cross-env": "^7.0.3",
     "eslint": "^7.32.0",
-    "jest": "^27.2.1",
-    "webpack": "^5.54.0",
-    "webpack-cli": "^4.8.0"
+    "jest": "^27.3.1",
+    "webpack": "^5.59.0",
+    "webpack-cli": "^4.9.1"
   }
 }
