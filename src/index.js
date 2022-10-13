@@ -7,12 +7,20 @@
  * @return {Object}
  */
 const groupBy = (list, keySelector) => {
+  if (!Array.isArray(list)) {
+    throw new Error('Value is not an array.');
+  }
+
   const result = {};
   const count = list.length;
   let val = null;
 
   for (let i = 0; i < count; i++) {
     val = keySelector(list[i]);
+
+    if (val?.constructor?.name !== 'String' && val?.constructor?.name !== 'Number') {
+      throw new Error('Key must be string or number.');
+    }
 
     if (result[val] === undefined) {
       result[val] = [];
@@ -33,18 +41,32 @@ const groupBy = (list, keySelector) => {
  * @return {Promise<Object>}
  */
 const groupByAsync = async (list, keySelector) => {
-  const result = {};
-  let val = null;
-  const resolved = await Promise.all(list.map((x) => Promise.resolve(x).then(keySelector)));
-  const count = resolved.length;
+  if (!Array.isArray(list)) {
+    throw new Error('Value is not an array.');
+  }
 
+  const result = {};
+  const resolved = await Promise.all(
+    list.map((object, index) => Promise.resolve({ object, index })
+      .then(async (o) => ({
+        index: o.index,
+        key: await keySelector(o.object)
+      })))
+  );
+
+  const count = resolved.length;
   for (let i = 0; i < count; i++) {
-    val = resolved[i];
-    if (result[val] === undefined) {
-      result[val] = [];
+    const { key, index } = resolved[i];
+
+    if (key?.constructor?.name !== 'String' && key?.constructor?.name !== 'Number') {
+      throw new Error('Key must be string or number.');
     }
 
-    result[val].push(list[i]);
+    if (result[key] === undefined) {
+      result[key] = [];
+    }
+
+    result[key].push(list[index]);
   }
 
   return result;

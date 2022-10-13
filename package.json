@@ -25,17 +25,13 @@
     "map",
     "jitesoft"
   ],
-  "eslintConfig": {
-    "parser": "@babel/eslint-parser",
-    "extends": "@jitesoft"
-  },
   "author": {
     "name": "Johannes Tegnér",
     "email": "johannes@jitesoft.com",
     "url": "https://jitesoft.com"
   },
   "dependencies": {
-    "@babel/runtime-corejs3": "^7.18.3"
+    "@babel/runtime-corejs3": "^7.19.4"
   },
   "jest": {
     "collectCoverage": true,
@@ -45,18 +41,18 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.17.10",
-    "@babel/core": "^7.18.2",
-    "@babel/eslint-parser": "^7.18.2",
-    "@jitesoft/babel-preset-main": "^3.0.1",
-    "@jitesoft/eslint-config": "^4.1.2",
-    "babel-jest": "^28.1.0",
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.3",
+    "@babel/eslint-parser": "^7.19.1",
+    "@jitesoft/babel-preset-main": "^4.0.3",
+    "@jitesoft/eslint-config": "^4.1.8",
+    "babel-jest": "^29.1.2",
     "babel-loader": "^8.2.5",
-    "core-js": "^3.22.8",
+    "core-js": "^3.25.5",
     "cross-env": "^7.0.3",
-    "eslint": "^8.17.0",
-    "jest": "^28.1.0",
-    "webpack": "^5.73.0",
-    "webpack-cli": "^4.9.2"
+    "eslint": "^8.25.0",
+    "jest": "^29.1.2",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
   }
 }
