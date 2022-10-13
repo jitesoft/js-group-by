@@ -7,12 +7,20 @@
  * @return {Object}
  */
 const groupBy = (list, keySelector) => {
+  if (!Array.isArray(list)) {
+    throw new Error('Value is not an array.');
+  }
+
   const result = {};
   const count = list.length;
   let val = null;
 
   for (let i = 0; i < count; i++) {
     val = keySelector(list[i]);
+
+    if (val?.constructor?.name !== 'String' && val?.constructor?.name !== 'Number') {
+      throw new Error('Key must be string or number.');
+    }
 
     if (result[val] === undefined) {
       result[val] = [];
@@ -33,6 +41,10 @@ const groupBy = (list, keySelector) => {
  * @return {Promise<Object>}
  */
 const groupByAsync = async (list, keySelector) => {
+  if (!Array.isArray(list)) {
+    throw new Error('Value is not an array.');
+  }
+
   const result = {};
   let val = null;
   const resolved = await Promise.all(list.map((x) => Promise.resolve(x).then(keySelector)));
@@ -40,6 +52,11 @@ const groupByAsync = async (list, keySelector) => {
 
   for (let i = 0; i < count; i++) {
     val = resolved[i];
+
+    if (val?.constructor?.name !== 'String' && val?.constructor?.name !== 'Number') {
+      throw new Error('Key must be string or number.');
+    }
+
     if (result[val] === undefined) {
       result[val] = [];
     }
