@@ -31,7 +31,7 @@
     "url": "https://jitesoft.com"
   },
   "dependencies": {
-    "@babel/runtime-corejs3": "^7.20.1"
+    "@babel/runtime-corejs3": "^7.20.6"
   },
   "jest": {
     "collectCoverage": true,
